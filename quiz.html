@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script src="quiz.js" defer></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header>
+        <h1 id="cabecalho">Quiz</h1>
+        <span id="placar" aria-live="polite">0 pontos</span>
+    </header>
+    <main>
+        <div id="c"><h2 id="titulo"></h2></div>
+        <div id="r">
+            <button id="r1" type="button"></button>
+            <button id="r2" type="button"></button>
+            <button id="r3" type="button"></button>
+            <button id="r4" type="button"></button>
+        </div>
+        <!-- Modal de resposta certa ou errada -->
+<div id="modalFeedback" class="modal-overlay hidden">
+    <div class="modal-box feedback-box">
+        <h2 id="feedbackTitulo"></h2>
+        <p id="feedbackTexto"></p>
+        <button id="btnContinuar" type="button">
+            Continuar
+        </button>
+    </div>
+</div><div id="modal" class="modal-overlay hidden">
+            <div class="modal-box"><div id="resultado"></div></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Todos os Direitos Reservados</p>
+        <p>Desenvolvido por: <a href="https://github.com/Schutz-br">Kryzn</a></p>
+    </footer>
+</body>
+</html>
